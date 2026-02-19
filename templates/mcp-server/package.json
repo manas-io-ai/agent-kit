@@ -1,0 +1,31 @@
+{
+  "name": "mcp-server-starter",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol (MCP) server with 3 working tools",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-server-starter": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
